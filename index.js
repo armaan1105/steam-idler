@@ -114,7 +114,7 @@ var status7 = 1;  // 1 - online, 7 - invisible
 user7 = new steamUser();
 user7.logOn({"accountName": username7, "password": password7, "twoFactorCode": steamTotp.generateAuthCode(shared_secret7)});
 user7.on('loggedOn', () => {
-	if (user7.steamID != null) console.log(user7.steamID + ' - Successfully logged on');
+	if(user7.steamID != null) console.log(user7.steamID + ' - Successfully logged on');
 	user7.setPersona(status7);               
 	user7.gamesPlayed(games7);
 });
@@ -132,4 +132,4 @@ user8.on('loggedOn', () => {
       if(user8.steamID != null) console.log(user8.steamID + ' - Successfully logged on');
        user8.setPersona(status8);               
 	user8.gamesPlayed(games8);
-});*/
+});
