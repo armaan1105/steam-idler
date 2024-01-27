@@ -119,7 +119,7 @@ user7.on('loggedOn', () => {
 	user7.gamesPlayed(games7);
 });
 
-/*var username8 = process.env.username8;
+var username8 = process.env.username8;
 var password8 = process.env.password8;
 var shared_secret8 = process.env.shared8;
 
